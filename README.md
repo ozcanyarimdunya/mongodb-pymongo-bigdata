@@ -46,7 +46,7 @@ user_id | check_in_time 	|   latitude	|  longitude	 |location_id
 -----------------------------------------------------------------------------------------
 
 #####To import demo.tsv file into our mongodb  open **terminal** and write;
-	*mongoimport -d your_db_name -c your_collection_name --file /your_tsv_file_path/demo.tsv --type tsv --headerline
+	mongoimport -d your_db_name -c your_collection_name --file /your_tsv_file_path/demo.tsv --type tsv --headerline
 
 -----------------------------------------------------------------------------------------
 
