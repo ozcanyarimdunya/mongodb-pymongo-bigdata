@@ -1,14 +1,20 @@
-user_id	    check_in_time	    latitude	    longitude	location_id
-0	2010-10-19T23:55:27Z	30.2359091167	-97.7951395833	22847
-0	2010-10-18T22:17:43Z	30.2691029532	-97.7493953705	420315
-.           .                   .                   .           .
-.           .                   .                   .           .
-.           .                   .                   .           .
-.           .                   .                   .           .
+`user_id	    check_in_time	    latitude	    longitude	location_id'`
+
+`0	2010-10-19T23:55:27Z	30.2359091167	-97.7951395833	22847`
+
+`0	2010-10-18T22:17:43Z	30.2691029532	-97.7493953705	420315`
+
+`.           .                   .                   .           .`
+
+`.           .                   .                   .           .`
+
+`.           .                   .                   .           .`
+
+`.           .                   .                   .           .`
 
 ###
-Our data looks like this
-The headerline shown as in the first line
+	 * Our data looks like this
+	 * The headerline shown as in the first line
 First i have save Gowalla_totalCheckins.txt as demo.tsv
 So i can import it into mongodb
 To import demo.tsv file into our mongodb write on terminal;
