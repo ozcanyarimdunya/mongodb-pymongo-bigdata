@@ -23,11 +23,12 @@ function_reduce = Code('''
     }
 ''')
 
+#mycl is the collection which we are going to reduced
 #save the data in reduced_location collection after map reducing
 result = db['mycl'].map_reduce(function_map, function_reduce, 'reduced_location' )
 
 """
-#This part is for printing the reduced_user collection
+#This part is for printing the reduced_location collection
 for doc in result.find():
     print doc
 """
