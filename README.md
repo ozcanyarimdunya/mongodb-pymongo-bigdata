@@ -87,6 +87,33 @@ user_id | check_in_time 	|   latitude	|  longitude	 |location_id
 
 ###And now your file is ready !
 
+#####reduced_user
+    { "_id" : 0, "value" : 225 }
+    { "_id" : 1, "value" : 12 }
+    { "_id" : 2, "value" : 2100 }
+    { "_id" : 4, "value" : 225 }
+    { "_id" : 5, "value" : 50 }
+    { "_id" : 7, "value" : 75 }
+    { "_id" : 8, "value" : 25 }
+    { "_id" : 9, "value" : 150 }
+    { "_id" : 10, "value" : 100 }
+
+-----------------------------------------------------------------------------------------
+
+
+#####reduced_location
+    { "_id" : 8904, "value" : 1 }
+    { "_id" : 8938, "value" : 1 }
+    { "_id" : 8947, "value" : 1 }
+    { "_id" : 8964, "value" : 1 }
+    { "_id" : 8977, "value" : 5 }
+    { "_id" : 8994, "value" : 1 }
+    { "_id" : 9002, "value" : 2 }
+    { "_id" : 9063, "value" : 3 }
+    { "_id" : 9064, "value" : 1 }
+    { "_id" : 9071, "value" : 1 }
+
+
 -----------------------------------------------------------------------------------------
 
 
