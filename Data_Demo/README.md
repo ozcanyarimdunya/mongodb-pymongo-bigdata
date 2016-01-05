@@ -18,26 +18,26 @@ user_id | check_in_time 	|   latitude	|  longitude	 |location_id
 
 *- So i can import it into mongodb*
 
-#####To import demo.tsv file into our mongodb write on terminal;
+#####To import demo.tsv file into our mongodb  open **terminal** and write;
 	*mongoimport -d your_db_name -c your_collection_name --file /your_tsv_file_path/demo.tsv --type tsv --headerline
-And now your tsv file import into mongodb
 
-#####Now open terminal and write;
-	xx@xx:~$ mongo
+
+#####When import process done write;
+	xx@xx:~$ mongo 		//mongo shell will open
 	> use your_db_name
-	> db.your_collection_name.find().pretty()       (**pretty** make it pretty good :D)
+	> db.your_collection_name.find().pretty()       //pretty make it pretty good :D
 
-And your result must be like this
+#####Your result must be like below
 
-{
-	"_id" : ObjectId("568bf2b0e792b7459fea01f9"),
-	"user_id" : 0,
-	"check_in_time" : "2010-10-19T23:55:27Z",
-	"latitude" : 30.2359091167,
-	"longitude" : -97.7951395833,
-	"location_id" : 22847
-}
-.
-.
-.
+>{
+	>-"_id" : ObjectId("568bf2b0e792b7459fea01f9"),
+	>-"user_id" : 0,
+	>-"check_in_time" : "2010-10-19T23:55:27Z",
+	>-"latitude" : 30.2359091167,
+	>-"longitude" : -97.7951395833,
+	>-"location_id" : 22847
+>-}
+
+
+
 @ozcaan11
