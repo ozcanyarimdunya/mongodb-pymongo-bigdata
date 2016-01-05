@@ -1,5 +1,6 @@
-#####After operation we have two db
+#####After operation we have two **db**
 -1-reduced_user
+
 -2-reduced_location
 
 -----------------------------------------------------------------------------------------
