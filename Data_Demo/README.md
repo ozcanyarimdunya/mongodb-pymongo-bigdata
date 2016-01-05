@@ -21,9 +21,9 @@ user_id | check_in_time 	|   latitude	|  longitude	 |location_id
 
 #####And now your tsv file import into mongodb
 #####Now open terminal and write;
-	*xx@xx:~$ mongo
-	*> use your_db_name
-	*> db.your_collection_name.find().pretty()       (**pretty** make it pretty good :D)
+	xx@xx:~$ mongo
+	> use your_db_name
+	> db.your_collection_name.find().pretty()       (**pretty** make it pretty good :D)
 
 And your result must be like this
 
