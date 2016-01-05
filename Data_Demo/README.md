@@ -29,15 +29,15 @@ user_id | check_in_time 	|   latitude	|  longitude	 |location_id
 
 #####Your result must be like below
 
->{
-	>-"_id" : ObjectId("568bf2b0e792b7459fea01f9"),
-	>-"user_id" : 0,
-	>-"check_in_time" : "2010-10-19T23:55:27Z",
-	>-"latitude" : 30.2359091167,
-	>-"longitude" : -97.7951395833,
-	>-"location_id" : 22847
->-}
+	{
+		"_id" : ObjectId("568bf2b0e792b7459fea01f9"),
+		"user_id" : 0,
+		"check_in_time" : "2010-10-19T23:55:27Z",
+		"latitude" : 30.2359091167,
+		"longitude" : -97.7951395833,
+		"location_id" : 22847
+	}
 
 
 
-@ozcaan11
+####@ozcaan11
