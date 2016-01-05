@@ -12,7 +12,7 @@ function_map = Code('''
     }
 ''')
 
-#reducing func. return total value of the location_ids
+#reducing func. return total value of the  location_ids
 function_reduce = Code('''
     function(key,values){
         var total = 0;
