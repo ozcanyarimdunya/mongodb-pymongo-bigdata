@@ -1,4 +1,5 @@
-##### Our data looks like this
+### Our data looks like below table
+
 
 user_id | check_in_time 	|   latitude	|  longitude	 |location_id
 --------|-----------------------|---------------|----------------|-----------
