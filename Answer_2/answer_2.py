@@ -5,7 +5,7 @@ from bson.code import Code
 #connect to database
 db = MongoClient()['mydb']
 
-#mapping func. emitting all user_ids
+#mapping func. emitting all location_ids
 function_map = Code('''
     function(){
         emit(this.location_id,1);
