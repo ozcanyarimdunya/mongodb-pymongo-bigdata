@@ -87,7 +87,7 @@ user_id | check_in_time 	|   latitude	|  longitude	 |location_id
 
 ###And now your file is ready !
 
-#####reduced_user
+#####reduced_user.tsv file
     { "_id" : 0, "value" : 225 }
     { "_id" : 1, "value" : 12 }
     { "_id" : 2, "value" : 2100 }
@@ -101,7 +101,7 @@ user_id | check_in_time 	|   latitude	|  longitude	 |location_id
 -----------------------------------------------------------------------------------------
 
 
-#####reduced_location
+#####reduced_location.tsv file
     { "_id" : 8904, "value" : 1 }
     { "_id" : 8938, "value" : 1 }
     { "_id" : 8947, "value" : 1 }
