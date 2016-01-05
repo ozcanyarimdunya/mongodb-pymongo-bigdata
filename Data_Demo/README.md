@@ -14,8 +14,8 @@ user_id | check_in_time 	|   latitude	|  longitude	 |location_id
 
 >**NOTE**
 
->-First i have to save Gowalla_totalCheckins.txt as demo.tsv
->-So i can import it into mongodb
+>- First i have to save Gowalla_totalCheckins.txt as demo.tsv
+>- So i can import it into mongodb
 #####To import demo.tsv file into our mongodb write on terminal;
 	*mongoimport -d your_db_name -c your_collection_name --file /your_tsv_file_path/demo.tsv --type tsv --headerline
 
