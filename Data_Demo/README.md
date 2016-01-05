@@ -1,4 +1,4 @@
-### Our data looks like below table
+##### Our data looks like below table
 -----------------------------------
 
 
@@ -11,9 +11,9 @@ user_id | check_in_time 	|   latitude	|  longitude	 |location_id
 .       |   .                   |.              |   .            |.
 
 
-The **headerline** shown as in the first line
+The **headerline** shown as in the **first line**
 
-*NOTE*
+**NOTE**
 
 *- First i have to save Gowalla_totalCheckins.txt as demo.tsv*
 
@@ -24,7 +24,7 @@ The **headerline** shown as in the first line
 
 
 #####When import process done write;
-	xx@xx:~$ mongo 		//mongo shell will open
+	xx@xx:~$ mongo 					//mongo shell will open
 	> use your_db_name
 	> db.your_collection_name.find().pretty()       //pretty make it pretty good :D
 
