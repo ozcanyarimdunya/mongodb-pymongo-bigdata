@@ -1,7 +1,6 @@
 #####After operation we have two *db*
-    - reduced_user
-
-    - reduced_location
+    1- reduced_user
+    2- reduced_location
 
 -----------------------------------------------------------------------------------------
 
