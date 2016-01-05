@@ -1,14 +1,16 @@
 from pymongo import MongoClient
 from bson.code import Code
 
-
+#connect to mydb database
 db = MongoClient()['mydb']
 
+#mapping func. emitting all user_ids
 function_map = Code('''
     function(){
         emit(this.user_id,1);
     }
 ''')
+
 function_reduce = Code('''
     function(key,values){
         var total = 0;
