@@ -1,5 +1,5 @@
 ##### Our data looks like below table
------------------------------------
+-----------------------------------------------------------------------------------------
 
 
 user_id | check_in_time 	|   latitude	|  longitude	 |location_id
@@ -12,21 +12,28 @@ user_id | check_in_time 	|   latitude	|  longitude	 |location_id
 
 
 The **headerline** shown as in the **first line**
+-----------------------------------------------------------------------------------------
 
-**NOTE**
 
-*- First i have to save Gowalla_totalCheckins.txt as demo.tsv*
+>**NOTE**
 
-*- So i can import it into mongodb*
+>-*- First i have to save Gowalla_totalCheckins.txt as demo.tsv*
+
+>-*- So i can import it into mongodb*
+
+-----------------------------------------------------------------------------------------
 
 #####To import demo.tsv file into our mongodb  open **terminal** and write;
 	*mongoimport -d your_db_name -c your_collection_name --file /your_tsv_file_path/demo.tsv --type tsv --headerline
 
+-----------------------------------------------------------------------------------------
 
 #####When import process done write;
 	xx@xx:~$ mongo 					//mongo shell will open
 	> use your_db_name
 	> db.your_collection_name.find().pretty()       //pretty make it pretty good :D
+
+-----------------------------------------------------------------------------------------
 
 #####Your result must be like below
 
@@ -39,6 +46,8 @@ The **headerline** shown as in the **first line**
 		"location_id" : 22847
 	}
 
+
+-----------------------------------------------------------------------------------------
 
 
 ####@ozcaan11
