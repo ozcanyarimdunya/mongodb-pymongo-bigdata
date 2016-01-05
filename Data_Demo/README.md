@@ -1,4 +1,5 @@
 ### Our data looks like below table
+-----------------------------------
 
 
 user_id | check_in_time 	|   latitude	|  longitude	 |location_id
@@ -10,11 +11,9 @@ user_id | check_in_time 	|   latitude	|  longitude	 |location_id
 .       |   .                   |.              |   .            |.
 
 
-
-#####The headerline shown as in the first line
+*The **headerline** shown as in the first line*
 
 **NOTE**
-
 *- First i have to save Gowalla_totalCheckins.txt as demo.tsv*
 
 *- So i can import it into mongodb*
