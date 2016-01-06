@@ -33,8 +33,7 @@ result = db['mycl'].map_reduce(function_map, function_reduce, 'reduced_user')
 print "DONE !"
 print "-"*50+"\n"
 
-"""
+
 #This part is for printing the reduced_user collection
 for doc in result.find():
     print doc
-"""
