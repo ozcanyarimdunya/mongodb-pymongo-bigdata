@@ -6,30 +6,30 @@ Bu projede elimizde bulunan veri dosyasında yaklaşık 6 milyon satırlık veri
 
 Burada bulmaya çalıştığımız bilgiler
 
-    *Bütün kullanıcılar herbirinin toplam kaç check-in yaptığı*                                 (1)
+    Bütün kullanıcılar herbirinin toplam kaç check-in yaptığı                                  (1)
 
-    *Bütün yerlerde toplam kaç tane check-in yapıldığı*                                         (2)
+    Bütün yerlerde toplam kaç tane check-in yapıldığı                                          (2)
 
-    *Bir kullanıcının check-in yaptığı bütün yerlerde en çok check-in yapan kişileri bulmak*    (3)
+    Bir kullanıcının check-in yaptığı bütün yerlerde en çok check-in yapan kişileri bulmak     (3)
 
 İşlemlerin daha hızlı gerçekleşmesi için büyük dosyadan aldığımız demo dosya **Data_Demo** klasöründe *demo.tsv* olarak bulunmakta
 
-Answer_1 klasöründa (1) şartı için yazılmış kodlar bulunmaktadır
+Answer_1 klasöründe (1) şartı için yazılmış kodlar bulunmaktadır
 
-Answer_2 klasöründa (2) şartı için yazılmış kodlar bulunmaktadır
+Answer_2 klasöründe (2) şartı için yazılmış kodlar bulunmaktadır
 
-Data_Output klasöründe
+**Data_Output klasöründe**
 
-    (1) şartı için export edilen tsv dosyaları ( **reduced_user_for_demo.tsv** ve **reduced_user_for_all_data.tsv** ) bulunmakta
+(1) şartı için export edilen tsv dosyaları ( **reduced_user_for_demo.tsv** ve **reduced_user_for_all_data.tsv** ) bulunmakta
 
-    (2) şartı için export edilen tsv dosyaları ( **reduced_location_for_demo.tsv** ve **reduced_location_for_all_data.tsv** ) bulunmakta
+(2) şartı için export edilen tsv dosyaları ( **reduced_location_for_demo.tsv** ve **reduced_location_for_all_data.tsv** ) bulunmakta
 
 ------------------------------------------------------------------------
 
 
 ##### Data aşağıdaki tablodaki gibidir
 
-**headerline** tabloda gösterildiği gibi  **ilk satırda** yer almaktadır
+**Headerline** tabloda gösterildiği gibi  **ilk satırda** yer almaktadır
 
 -----------------------------------------------------------------------------------------
 
@@ -84,7 +84,7 @@ user_id | check_in_time 	|   latitude	|  longitude	 |location_id
 -----------------------------------------------------------------------------------------
 
 
-#####answer_1_for_demo ve answer_2_for_demo kodlarının çalıştırılmasından sonra databsemizde iki collection olacaktır. Bunlar;
+#####answer_1_for_demo ve answer_2_for_demo kodlarının çalıştırılmasından sonra databasemizde iki collection olacaktır. Bunlar;
     1- reduced_user
     2- reduced_location
 
@@ -134,10 +134,10 @@ user_id | check_in_time 	|   latitude	|  longitude	 |location_id
 
 #####Kullanılan araçlar
 
-    Pycharm Community Edition 5.0.3
+Ubuntu 14.04 LTS
 
-    Mongodb
+Pycharm Community Edition 5.0.3
 
-    Ubuntu 14.04 LTS
+Mongodb
 
 #####@ozcaan11 tarafında geliştirilen bir proje olarak duruyor şuan :)

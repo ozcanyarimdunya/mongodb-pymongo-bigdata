@@ -1,4 +1,4 @@
-#####answer_1_for_demo ve answer_2_for_demo kodlarının çalıştırılmasından sonra databsemizde iki collection olacaktır. Bunlar;
+#####answer_1_for_demo ve answer_2_for_demo kodlarının çalıştırılmasından sonra databasemizde iki collection olacaktır. Bunlar;
     1- reduced_user
     2- reduced_location
 
