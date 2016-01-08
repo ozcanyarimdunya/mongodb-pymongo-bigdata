@@ -8,7 +8,7 @@ db = MongoClient()['mydb']
 # mapping func. emitting all user_ids
 function_map = Code('''
     function(){
-        emit(this.user_id,1);
+        emit(this.location_id,1);
     }
 ''')
 
@@ -23,16 +23,16 @@ function_reduce = Code('''
     }
 ''')
 
-print "-" * 50
-print "PROCESSING ...\n"
-
 # mycl is the collection which we are going to reduced
 # save the data in reduced_user collection after map reducing
-result = db['mycl'].map_reduce(function_map, function_reduce, 'reduced_user')
+results = db['mycl'].map_reduce(function_map, function_reduce, 'max_check-in')
 
-print "DONE !"
-print "-" * 50 + "\n"
+g = {}
 
 # This part is for printing the reduced_user collection
-for doc in result.find():        # .sort('value', -1):    # sort ile value ye göre en çoktan aza sıralama yapıyoruz
-    print doc
+for res in results.find().sort('value', -1):
+    g.__setitem__(res['_id'], res['value'])
+
+# en fazla check-in nerede yapılmış
+maximum = max(g, key=g.get)
+print 'location_id :', maximum, '\ttotal_check_in :', g[maximum]
