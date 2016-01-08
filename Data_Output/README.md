@@ -1,17 +1,17 @@
-#####After operation we have two collections
+#####answer_1_for_demo ve answer_2_for_demo kodlarının çalıştırılmasından sonra databsemizde iki collection olacaktır. Bunlar;
     1- reduced_user
     2- reduced_location
 
 -----------------------------------------------------------------------------------------
 
-#####To export these collections open terminal and write;
+#####Bu dataları export etmek (dışarı çıkarmak) için terminali açın ve aşağıdakileri yazın;
 
     mongoexport -d your_db_name -c reduced_user     --out /choose_a_path/reduced_user.tsv
     mongoexport -d your_db_name -c reduced_location --out /choose_a_path/reduced_location.tsv
 
 -----------------------------------------------------------------------------------------
 
-###And now your file is ready !
+###Ve artık datanız hazır !
 
 -----------------------------------------------------------------------------------------
 

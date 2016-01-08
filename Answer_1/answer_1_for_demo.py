@@ -2,17 +2,26 @@
 from pymongo import MongoClient
 from bson.code import Code
 
-#connect to database
+'''
+    *---- BU KISIM 10,000 SATIRLIK DEMO DATA İÇİN ----*
+
+    Her bir user için toplam check_in sayılarını bulmak için;
+
+    >> user_id leri mapping yaptık
+    >> reduce ile bunların sayısını bulduk
+    >> map_reduce fonksiyonu sayesinde bu bulduğumuz verileri
+       yeni bir collectiona atadık
+'''
+
+
 db = MongoClient()['mydb']
 
-#mapping func. emitting all user_ids
 function_map = Code('''
     function(){
         emit(this.user_id,1);
     }
 ''')
 
-#reducing func. return total value of the user_ids
 function_reduce = Code('''
     function(key,values){
         var total = 0;
@@ -24,16 +33,16 @@ function_reduce = Code('''
 ''')
 
 print "-"*50
-print "PROCESSING ...\n"
+print "PLEASE WAIT ...\n"
 
-#mycl is the collection which we are going to reduced
-#save the data in reduced_user collection after map reducing
 result = db['mycl'].map_reduce(function_map, function_reduce, 'reduced_user')
 
 print "DONE !"
-print "-"*50+"\n"
+print "-"*50
 
-
-#This part is for printing the reduced_user collection
+"""
+# Bu kısım datayı göstermek için
+# İsteğe bağlı
 for doc in result.find():
     print doc
+"""

@@ -1,6 +1,6 @@
-##### Our data looks like below table
+##### Data aşağıdaki tablodaki gibidir
 
-The **headerline** shown as in the **first line**
+**headerline** tabloda gösterildiği gibi  **ilk satırda** yer almaktadır
 
 -----------------------------------------------------------------------------------------
 
@@ -18,27 +18,29 @@ user_id | check_in_time 	|   latitude	|  longitude	 |location_id
 -----------------------------------------------------------------------------------------
 
 
->**NOTE**
+>**NOT**
 
->-*- First i have to save Gowalla_totalCheckins.txt as demo.tsv*
+>-*- Önce Gowalla_totalCheckins.txt dosyası Gowalla_totalCheckins.tsv dosyasına dönüştürülmeli*
 
->-*- So i can import it into mongodb*
+>-*- Bu sayede mongodb ye import edilebilir*
+
+>-*- Gowalla_totalCheckins.tsv den aldığım 10000 satırlık bir kesiti demo.tsv olarak kaydettim*
 
 -----------------------------------------------------------------------------------------
 
-#####To import demo.tsv file into our mongodb  open **terminal** and write;
+#####demo.tsv dosyasını mongodb ye import etmek için **terminali** açın ve aşağıdakileri yazın;
 	*mongoimport -d your_db_name -c your_collection_name --file /your_tsv_file_path/demo.tsv --type tsv --headerline
 
 -----------------------------------------------------------------------------------------
 
-#####When import process done write;
-	xx@xx:~$ mongo 					//mongo shell will open
+#####İmport işlemi tamamladığında yeni bir terminal açıp aşağıdakileri yazın;
+	xx@xx:~$ mongo 					//mongo shell açılacaktır
 	> use your_db_name
-	> db.your_collection_name.find().pretty()       //pretty make it pretty good :D
+	> db.your_collection_name.find().pretty()       //pretty datayı daha düzenli gösteriyor
 
 -----------------------------------------------------------------------------------------
 
-#####Your result must be like below
+#####Yukarıdaki işlemlerden sonra karşınızda şöyle bir satır örneği olmalıdır
 
 	{
 		"_id" : ObjectId("568bf2b0e792b7459fea01f9"),

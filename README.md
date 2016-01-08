@@ -1,25 +1,35 @@
 ###Big Data Project
 
-In this project we have about **6 million** data which show users check-in times,location ...
+Bu projede elimizde bulunan veri dosyasında yaklaşık 6 milyon satırlık veri bulunmaktadır. (user_id,location_id ...)
 
 ------------------------------------------------------------------------
 
-All we want to know *all users total check-in*
+Burada bulmaya çalıştığımız bilgiler
 
-and *all locations total user* (explain it widely)
+    *Bütün kullanıcılar herbirinin toplam kaç check-in yaptığı*                                 (1)
 
-The data files demo stored at **Data_Demo** file
+    *Bütün yerlerde toplam kaç tane check-in yapıldığı*                                         (2)
 
-Answer_1 python file looks for all users total check-in and its file saved in Data_Output file as **reduced_user**
+    *Bir kullanıcının check-in yaptığı bütün yerlerde en çok check-in yapan kişileri bulmak*    (3)
 
-Answer_2 python file looks for all locations total user and its file saved in Data_Output file as **reduced_location**
+İşlemlerin daha hızlı gerçekleşmesi için büyük dosyadan aldığımız demo dosya **Data_Demo** klasöründe *demo.tsv* olarak bulunmakta
+
+Answer_1 klasöründa (1) şartı için yazılmış kodlar bulunmaktadır
+
+Answer_2 klasöründa (2) şartı için yazılmış kodlar bulunmaktadır
+
+Data_Output klasöründe
+
+    (1) şartı için export edilen tsv dosyaları ( **reduced_user_for_demo.tsv** ve **reduced_user_for_all_data.tsv** ) bulunmakta
+
+    (2) şartı için export edilen tsv dosyaları ( **reduced_location_for_demo.tsv** ve **reduced_location_for_all_data.tsv** ) bulunmakta
 
 ------------------------------------------------------------------------
 
 
-##### Our data looks like below table
+##### Data aşağıdaki tablodaki gibidir
 
-The **headerline** shown as in the **first line**
+**headerline** tabloda gösterildiği gibi  **ilk satırda** yer almaktadır
 
 -----------------------------------------------------------------------------------------
 
@@ -37,27 +47,29 @@ user_id | check_in_time 	|   latitude	|  longitude	 |location_id
 -----------------------------------------------------------------------------------------
 
 
->**NOTE**
+>**NOT**
 
->-*- First i have to save Gowalla_totalCheckins.txt as demo.tsv*
+>-*- Önce Gowalla_totalCheckins.txt dosyası Gowalla_totalCheckins.tsv dosyasına dönüştürülmeli*
 
->-*- So i can import it into mongodb*
+>-*- Bu sayede mongodb ye import edilebilir*
 
------------------------------------------------------------------------------------------
-
-#####To import demo.tsv file into our mongodb  open **terminal** and write;
-	mongoimport -d your_db_name -c your_collection_name --file /your_tsv_file_path/demo.tsv --type tsv --headerline
+>-*- Gowalla_totalCheckins.tsv den aldığım 10000 satırlık bir kesiti demo.tsv olarak kaydettim*
 
 -----------------------------------------------------------------------------------------
 
-#####When import process done write;
-	xx@xx:~$ mongo 					//mongo shell will open
+#####demo.tsv dosyasını mongodb ye import etmek için **terminali** açın ve aşağıdakileri yazın;
+	*mongoimport -d your_db_name -c your_collection_name --file /your_tsv_file_path/demo.tsv --type tsv --headerline
+
+-----------------------------------------------------------------------------------------
+
+#####İmport işlemi tamamladığında yeni bir terminal açıp aşağıdakileri yazın;
+	xx@xx:~$ mongo 					//mongo shell açılacaktır
 	> use your_db_name
-	> db.your_collection_name.find().pretty()       //pretty make it pretty good :D
+	> db.your_collection_name.find().pretty()       //pretty datayı daha düzenli gösteriyor
 
 -----------------------------------------------------------------------------------------
 
-#####Your result must be like below
+#####Yukarıdaki işlemlerden sonra karşınızda şöyle bir satır örneği olmalıdır
 
 	{
 		"_id" : ObjectId("568bf2b0e792b7459fea01f9"),
@@ -72,22 +84,24 @@ user_id | check_in_time 	|   latitude	|  longitude	 |location_id
 -----------------------------------------------------------------------------------------
 
 
-#####After operation we have two collections
+#####answer_1_for_demo ve answer_2_for_demo kodlarının çalıştırılmasından sonra databsemizde iki collection olacaktır. Bunlar;
     1- reduced_user
     2- reduced_location
 
 -----------------------------------------------------------------------------------------
 
-#####To export these collections open terminal and write;
+#####Bu dataları export etmek (dışarı çıkarmak) için terminali açın ve aşağıdakileri yazın;
 
     mongoexport -d your_db_name -c reduced_user     --out /choose_a_path/reduced_user.tsv
     mongoexport -d your_db_name -c reduced_location --out /choose_a_path/reduced_location.tsv
 
 -----------------------------------------------------------------------------------------
 
-###And now your file is ready !
+###Ve artık datanız hazır !
 
-#####   reduced_user
+-----------------------------------------------------------------------------------------
+
+#####   reduced_user_for_demo.tsv dosyası
     { "_id" : 0, "value" : 225 }
     { "_id" : 1, "value" : 12 }
     { "_id" : 2, "value" : 2100 }
@@ -101,7 +115,7 @@ user_id | check_in_time 	|   latitude	|  longitude	 |location_id
 -----------------------------------------------------------------------------------------
 
 
-#####   reduced_location
+#####   reduced_location_for_demo.tsv dosyası
     { "_id" : 8904, "value" : 1 }
     { "_id" : 8938, "value" : 1 }
     { "_id" : 8947, "value" : 1 }
@@ -118,6 +132,12 @@ user_id | check_in_time 	|   latitude	|  longitude	 |location_id
 
 
 
-#####Pycharm Community Edition 5.0.3
+#####Kullanılan araçlar
 
-#####@ozcaan11
+    Pycharm Community Edition 5.0.3
+
+    Mongodb
+
+    Ubuntu 14.04 LTS
+
+#####@ozcaan11 tarafında geliştirilen bir proje olarak duruyor şuan :)
