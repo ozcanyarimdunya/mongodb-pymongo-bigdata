@@ -29,7 +29,6 @@ function_reduce = Code('''
         for(var i in values){
         total += values[i];
         };
-
     return total;
     }
 ''')
