@@ -44,6 +44,6 @@ print "-"*50+"\n"
 """
 # Bu kısım datayı göstermek için
 # İsteğe bağlı
+"""
 for doc in result.find():
     print doc
-"""

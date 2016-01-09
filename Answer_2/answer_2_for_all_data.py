@@ -41,12 +41,13 @@ result = db['newcl'].map_reduce(function_map, function_reduce, 'reduced_location
 print "DONE !"
 print "-"*50+"\n"
 
-"""
+'''
 # Bu kısım datayı göstermek için
 # İsteğe bağlı
+'''
 for doc in result.find():
     print doc
-"""
+
 
 """
 # Bu kısımda en çok check-in yapılan yeri
