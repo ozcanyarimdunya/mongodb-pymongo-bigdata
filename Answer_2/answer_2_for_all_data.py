@@ -40,7 +40,7 @@ print "-"*50+"\n"
 """
 # Bu kısım datayı göstermek için
 """
-for doc in result.find().sort('value', -1):
+for doc in result.find().sort('value', -1).limit(100):
     print " location_id: %.f " % (doc['_id']), \
           "\ttoplam check-in: %.f" % (doc['value'])
 
