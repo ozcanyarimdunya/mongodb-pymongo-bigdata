@@ -85,3 +85,5 @@ db['ss'].drop()
 db['out_ss'].drop()
 db['temp'].drop()
 user_entered = []
+for i in user_entered:
+    print i

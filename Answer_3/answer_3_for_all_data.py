@@ -72,7 +72,7 @@ print "\tBİLGİ: - %.f - id'li user toplam - %.f - checkin yapmıştır \t"%(us
 print "-"*75
 print "\n"
 for i in new_result.find().limit(100):
-    print "location_id: %.f da\t" % i['_id']['location_id'], \
+    print "location_id: %.f de\t" % i['_id']['location_id'], \
           "check-in yapan user: %.f\t" % i['_id']['user_id'],\
           "toplam check-in: %.f" % i['value']
 
