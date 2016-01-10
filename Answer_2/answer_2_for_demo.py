@@ -46,3 +46,4 @@ for doc in result.find().sort('value',-1):
 
 print "\n"+"-"*50
 
+db['reduced_location'].drop()

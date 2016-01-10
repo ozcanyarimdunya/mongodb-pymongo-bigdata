@@ -44,3 +44,5 @@ for doc in result.find().sort('value', -1):
           "\ttoplam check-in: %.f" % (doc['_id'],doc['value'])
 
 print "\n"+"-"*50
+
+db['reduced_user'].drop()
