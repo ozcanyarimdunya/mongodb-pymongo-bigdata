@@ -32,18 +32,16 @@ function_reduce = Code('''
     }
 ''')
 
-print "-"*50
-print "PLEASE WAIT ...\n"
-
-
 result = db['newcl'].map_reduce(function_map, function_reduce, 'reduced_user_all_data')
 
-print "DONE !"
 print "-"*50+"\n"
 
 """
 # Bu kısım datayı göstermek için
-# İsteğe bağlı
 """
-for doc in result.find():
-    print doc
+
+for doc in result.find().sort('value', -1).limit(100):
+    print " user_id: %.f\t\t" % (doc['_id']), \
+          "toplam check-in: %.f" % (doc['value'])
+
+print "\n"+"-"*50

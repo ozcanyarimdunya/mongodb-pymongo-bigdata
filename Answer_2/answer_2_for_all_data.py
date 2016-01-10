@@ -33,34 +33,17 @@ function_reduce = Code('''
     }
 ''')
 
-print "-"*50
-print "PLEASE WAIT ...\n"
-
 result = db['newcl'].map_reduce(function_map, function_reduce, 'reduced_location_all_data')
 
-print "DONE !"
 print "-"*50+"\n"
 
-'''
+"""
 # Bu kısım datayı göstermek için
-# İsteğe bağlı
-'''
-for doc in result.find():
-    print doc
-
-
 """
-# Bu kısımda en çok check-in yapılan yeri
-# ve check-in yapan user_id yi bulduk
-# İsteğe bağlı
+for doc in result.find().sort('value', -1):
+    print " location_id: %.f " % (doc['_id']), \
+          "\ttoplam check-in: %.f" % (doc['value'])
 
-g = {}
+print "\n"+"-"*50
 
-for res in results.find():
-    g.__setitem__(res['_id'], res['value'])
-
-maximum = max(g, key=g.get)
-print 'location_id :', maximum, '\ttotal_check_in :', g[maximum]
-
-"""
 

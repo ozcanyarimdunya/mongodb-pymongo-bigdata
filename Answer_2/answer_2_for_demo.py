@@ -33,18 +33,16 @@ function_reduce = Code('''
     }
 ''')
 
-print "-"*50
-print "PLEASE WAIT ...\n"
-
 result = db['mycl'].map_reduce(function_map, function_reduce, 'reduced_location')
 
-print "DONE !"
 print "-"*50+"\n"
 
 """
 # Bu kısım datayı göstermek için
-# İsteğe bağlı
-for doc in result.find():
-    print doc
 """
+for doc in result.find().sort('value',-1):
+    print " location_id: %.f "%(doc['_id']), \
+          "\ttoplam check-in: %.f" % (doc['value'])
+
+print "\n"+"-"*50
 

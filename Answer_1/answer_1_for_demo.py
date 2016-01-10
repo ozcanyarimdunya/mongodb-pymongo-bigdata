@@ -32,17 +32,15 @@ function_reduce = Code('''
     }
 ''')
 
-print "-"*50
-print "PLEASE WAIT ...\n"
-
 result = db['mycl'].map_reduce(function_map, function_reduce, 'reduced_user')
 
-print "DONE !"
-print "-"*50
+print "-"*50+"\n"
 
 """
 # Bu kısım datayı göstermek için
-# İsteğe bağlı
-for doc in result.find():
-    print doc
 """
+for doc in result.find().sort('value', -1):
+    print " user_id: %.f " \
+          "\ttoplam check-in: %.f" % (doc['_id'],doc['value'])
+
+print "\n"+"-"*50
