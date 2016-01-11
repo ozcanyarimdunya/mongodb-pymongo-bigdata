@@ -2,19 +2,17 @@
 from pymongo import MongoClient
 from bson.code import Code
 
-
-'''
-    *---- BU KISIM 6,5 MİLYON SATIRLIK DEV DATA İÇİN ----*
-
-    Toplam location_id bulmak için;
-
-    >> location_id leri mapping yaptık
-    >> reduce ile bunların sayısını bulduk
-    >> map_reduce fonksiyonu sayesinde bu bulduğumuz verileri
-       yeni bir collectiona atadık
-    >> bu collectiondan _id ve value ları ekranda gösterdik
-'''
-
+"""
+#    *---- BU KISIM 6,5 MİLYON SATIRLIK DEV DATA İÇİN ----*
+#
+#    Toplam location_id bulmak için;
+#
+#    >> location_id leri mapping yaptık
+#    >> reduce ile bunların sayısını bulduk
+#    >> map_reduce fonksiyonu sayesinde bu bulduğumuz verileri
+#       yeni bir collectiona atadık
+#    >> bu collectiondan _id ve value ları ekranda gösterdik
+"""
 # newdb ye bağlan
 db = MongoClient()['newdb']
 
@@ -38,9 +36,9 @@ result = db['newcl'].map_reduce(function_map, function_reduce, 'reduced_location
 
 print "-"*50+"\n"
 
-"""
+
 # Bu kısım datayı göstermek için
-"""
+
 for doc in result.find().sort('value', -1).limit(100):
     print " location_id: %.f " % (doc['_id']), \
           "\ttoplam check-in: %.f" % (doc['value'])

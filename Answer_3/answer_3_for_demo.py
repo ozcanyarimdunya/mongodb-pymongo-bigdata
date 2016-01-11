@@ -4,13 +4,15 @@ from bson.code import Code
 
 db = MongoClient()['mydb']
 
-'''
+"""
+                *-- AMAÇ --*
+
     Bir user_id nin bütün location_id lerini bul
     Bu location_id lerde check-in yapmış user_id leri bul ve sayılarını karşılaştır
     En büyük sayıyı user_id ve toplam check-in i ile birlikte yaz
-'''
+"""
 
-print "-"*75
+print "\n", "*"*75
 user_id =input('user_id yi giriniz: ')
 
 # mycl collectionun üzerinden arama yap --> ana collection : mycl
@@ -32,7 +34,7 @@ f_reduce_temp = Code('''
         return total;}
 ''')
 
-# (optinal) kullanıcının kaç tane check-in yaptığını hesaplamak için
+# (isteğe bağlı) kullanıcının kaç tane check-in yaptığını hesaplamak için
 counter = 0
 
 # kullanıcının check-in yaptığı tüm yerleri bulduk
@@ -41,12 +43,14 @@ for res in result.find({'user_id': user_id}).sort('location_id', -1):
     counter += 1
     db['temp'].insert({'user_id:': res['user_id'], 'location_id': res['location_id']})
 
+"""
 # kullanıcının bu yerlerin herbirinde toplamda
 # kaç check-in yaptığını bulduk
 # kullanıcı farklı zamanlarda aynı yerde check-in yapmışsa eğer
 # map_reduce işlemi ile aynı yerlerin sayısını bul
 # burda amaç temp collectionunda farklı object_id ile bulunan
 # aynı location_id leri tek satırda toplayıp bir diziye atmak
+"""
 temp = db['temp'].map_reduce(f_map_temp, f_reduce_temp, "temp_t")
 
 # bütün location_id leri diziye ekledik
@@ -95,18 +99,16 @@ new_result = db['ss'].map_reduce(function_map, function_reduce, "out_ss")
 
 print "\n"
 print "-"*75
-print "\tBİLGİ: - %.f - id'li user toplam - %.f - checkin yapmıştır \t"%(user_id, counter)
+print "\tBİLGİ: - %.f - id'li user toplam - %.f - checkin yapmıştır \t"%(user_id, counter),\
+    "\n\n\tbu yerlerde bütün kullanıcılar toplam - %.f - checkin yapmıştır\t"%(new_result.count())
 print "-"*75
 print "\n"
 for i in new_result.find():
     print "location_id: %.f da\t" % i['_id']['location_id'], \
           "check-in yapan user: %.f\t" % i['_id']['user_id'],\
-          "toplam check-in: %.f" % i['value']
+          "\ttoplam check-in: %.f" % i['value']
 
 print "\n"
-print "-"*75
-print "BİLGİ: - %.f - id'li user toplam - %.f - checkin yapmıştır "%(user_id, counter)
-print "-"*75
 
 
 # en sonda dbleri sil ve diziyi temizle
