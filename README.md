@@ -18,6 +18,8 @@ Answer_1 klasöründe (1) şartı için yazılmış kodlar bulunmaktadır
 
 Answer_2 klasöründe (2) şartı için yazılmış kodlar bulunmaktadır
 
+Answer_3 klasöründe (3) şartı için yazılmış kodlar bulunmaktadır
+
 **Data_Output klasöründe**
 
 (1) şartı için export edilen tsv dosyaları ( **reduced_user_for_demo.tsv** ve **reduced_user_for_all_data.tsv** ) bulunmakta
