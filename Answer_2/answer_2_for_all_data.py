@@ -12,9 +12,10 @@ from bson.code import Code
     >> reduce ile bunların sayısını bulduk
     >> map_reduce fonksiyonu sayesinde bu bulduğumuz verileri
        yeni bir collectiona atadık
+    >> bu collectiondan _id ve value ları ekranda gösterdik
 '''
 
-
+# newdb ye bağlan
 db = MongoClient()['newdb']
 
 function_map = Code('''
