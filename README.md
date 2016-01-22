@@ -47,7 +47,7 @@ user_id | check_in_time 	|   latitude	|  longitude	 |location_id
  2. İmport işlemi tamamladığında yeni bir terminal açıp aşağıdakileri
     yazın;
 
-		xx@xx:~$ mongo 					//mongo shell açılacaktır
+		  mongo 					//mongo shell açılacaktır
 		> use your_db_name
 		> db.your_collection_name.find().pretty()       //pretty datayı daha düzenli gösteriyor
 
@@ -63,11 +63,11 @@ Yukarıdaki işlemlerden sonra karşınızda şöyle bir satır örneği olmalı
 		"location_id" : 22847
 	}
 
- 3. Pymongo  modülünü pip üzerinde kurmak için terminali* açın ve sırasıyla
+ 3. Pymongo  modülünü pip üzerinde kurmak için terminali açın ve sırasıyla
 	1. pip kurmak için ;
 		
 			sudo python install pip
-	2. pymongo modülünü kurmak için; 
+	2. pymongo modülünü kurmak için ; 
 				
 			sudo pip install pymongo
 		
