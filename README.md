@@ -66,7 +66,7 @@ Yukarıdaki işlemlerden sonra karşınızda şöyle bir satır örneği olmalı
  3. Pymongo  modülünü pip üzerinde kurmak için terminali açın ve sırasıyla
 	1. pip kurmak için ;
 		
-			sudo python install pip
+			sudo apt-get install python-pip
 	2. pymongo modülünü kurmak için ; 
 				
 			sudo pip install pymongo
@@ -99,8 +99,10 @@ Sonuç olarak;
 
  1. Ubuntu 14.04 LTS
 	 - Download page:  http://www.ubuntu.com/download/desktop
+ 
  2. Pycharm Community Edition 5.0.3
 	 - Download page:  https://www.jetbrains.com/pycharm/download/#section=linux
+ 
  3. Mongodb
 	 - Download page:  https://www.mongodb.org/
 
