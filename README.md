@@ -75,7 +75,9 @@ Yukarıdaki işlemlerden sonra karşınızda şöyle bir satır örneği olmalı
 
 ---------
 
-######İsterler
+
+
+####İsterler
 
 Burada bulmaya çalıştığımız bilgiler
 
@@ -95,7 +97,7 @@ Sonuç olarak;
 
 ----------
 
-#####Kullanılan araçlar
+####Kullanılan araçlar
 
  1. Ubuntu 14.04 LTS
 	 - Download page:  http://www.ubuntu.com/download/desktop
