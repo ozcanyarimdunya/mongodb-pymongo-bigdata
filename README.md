@@ -40,7 +40,7 @@ user_id | check_in_time 	|   latitude	|  longitude	 |location_id
 
 #Nasıl Yapılır ?
 
- 1. **demo.tsv** dosyasını mongodb ye import etmek için " *terminali* " açın ve aşağıdakileri yazın;
+ 1. **demo.tsv** dosyasını mongodb ye import etmek için terminali açın ve aşağıdakileri yazın;
 
 		mongoimport -d your_db_name -c your_collection_name --file /your_tsv_file_path/demo.tsv --type tsv --headerline
 
@@ -63,7 +63,7 @@ Yukarıdaki işlemlerden sonra karşınızda şöyle bir satır örneği olmalı
 		"location_id" : 22847
 	}
 
- 3. Pymongo  modülünü pip üzerinde kurmak için " *terminali* " açın ve sırasıyla
+ 3. Pymongo  modülünü pip üzerinde kurmak için terminali* açın ve sırasıyla
 	1. pip kurmak için ;
 		
 			sudo python install pip
