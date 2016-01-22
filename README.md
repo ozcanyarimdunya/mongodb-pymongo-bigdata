@@ -1,3 +1,8 @@
+
+
+![mongoDB](http://www.bit-forge.com/wp-content/uploads/2015/06/mongodb-logo-large.png)
+
+
 ###Big Data Project
 
 Bu projede elimizde bulunan veri dosyasında yaklaşık 6 milyon satırlık veri *Gowalla_totalCheckins.txt* bulunmaktadır.
@@ -22,11 +27,11 @@ user_id | check_in_time 	|   latitude	|  longitude	 |location_id
 -----------------------------------------------------------------------------------------
 
 
-#####NOT
+#####**NOT**
 
-> - Gowalla_totalCheckins.txt den aldığım 10,000 satırlık bir kesiti *demo.txt* olarak kaydettim
+> - Gowalla_totalCheckins.txt den aldığım 10,000 satırlık bir kesiti ***demo.txt*** olarak kaydettim
 
-> - demo.txt dosyasını **.tsv** uzantılı olarak kaydettim. Bu sayede mongodb ye import edilebilir
+> - demo.txt dosyasını ***.tsv*** uzantılı olarak kaydettim. Bu sayede mongodb ye import edilebilir
 
 -----------------------------------------------------------------------------------------
 
@@ -79,10 +84,9 @@ Yukarıdaki işlemlerden sonra karşınızda şöyle bir satır örneği olmalı
 
 #####Kullanılan araçlar
 
-Ubuntu 14.04 LTS
+ 1. Ubuntu 14.04 LTS
+ 2. Pycharm Community Edition 5.0.3
+ 3. Mongodb
 
-Pycharm Community Edition 5.0.3
+***@ozcaan11*** tarafında geliştirilen bir proje olarak duruyor şuan :)
 
-Mongodb
-
-#####@ozcaan11 tarafında geliştirilen bir proje olarak duruyor şuan :)
