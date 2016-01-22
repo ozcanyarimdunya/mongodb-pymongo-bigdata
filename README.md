@@ -67,10 +67,10 @@ Yukarıdaki işlemlerden sonra karşınızda şöyle bir satır örneği olmalı
  - *Answer_1* klasöründe **(1)** şartı için yazılmış kodlar bulunmaktadır.
 (Çıktısı **top_100_user_checkin.txt**) olarak aynı klasörün içindedir
 
-*Answer_2* klasöründe **(2)** şartı için yazılmış kodlar bulunmaktadır
+ - *Answer_2* klasöründe **(2)** şartı için yazılmış kodlar bulunmaktadır
 (Çıktısı **top_100_location_checkin.txt**) olarak aynı klasörün içindedir
 
-*Answer_3* klasöründe **(3)** şartı için yazılmış kodlar bulunmaktadır
+ - *Answer_3* klasöründe **(3)** şartı için yazılmış kodlar bulunmaktadır
 (Çıktısı **top_100_max_checkin.txt**) olarak aynı klasörün içindedir
 
 
