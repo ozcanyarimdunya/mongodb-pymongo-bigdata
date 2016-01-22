@@ -2,7 +2,7 @@
 
 Bu projede elimizde bulunan veri dosyasında yaklaşık 6 milyon satırlık veri *Gowalla_totalCheckins.txt* bulunmaktadır.
 
-*   Gowalla_totalCheckins.txt* aşağıdaki tablodaki gibidir
+*Gowalla_totalCheckins.txt* aşağıdaki tablodaki gibidir
 
 **Headerline** tabloda gösterildiği gibi  *ilk satırda* yer almaktadır (Normalde yoktu db'ye aktarmak için biz ekledik)
 
