@@ -1,37 +1,12 @@
 ###Big Data Project
 
-Bu projede elimizde bulunan veri dosyasında yaklaşık 6 milyon satırlık veri bulunmaktadır. (user_id,location_id ...)
+Bu projede elimizde bulunan veri dosyasında yaklaşık 6 milyon satırlık veri (Gowalla_totalCheckins.txt) bulunmaktadır.
 
 ------------------------------------------------------------------------
 
-Burada bulmaya çalıştığımız bilgiler
+##### *Gowalla_totalCheckins.txt* aşağıdaki tablodaki gibidir
 
-    Bütün kullanıcılar herbirinin toplam kaç check-in yaptığı                                  (1)
-
-    Bütün yerlerde toplam kaç tane check-in yapıldığı                                          (2)
-
-    Bir kullanıcının check-in yaptığı bütün yerlerde en çok check-in yapan kişileri bulmak     (3)
-
-İşlemlerin daha hızlı gerçekleşmesi için büyük dosyadan aldığımız demo dosya **Data_Demo** klasöründe *demo.tsv* olarak bulunmakta
-
-Answer_1 klasöründe (1) şartı için yazılmış kodlar bulunmaktadır
-
-Answer_2 klasöründe (2) şartı için yazılmış kodlar bulunmaktadır
-
-Answer_3 klasöründe (3) şartı için yazılmış kodlar bulunmaktadır
-
-**Data_Output klasöründe**
-
-(1) şartı için export edilen tsv dosyaları ( **reduced_user_for_demo.tsv** ve **reduced_user_for_all_data.tsv** ) bulunmakta
-
-(2) şartı için export edilen tsv dosyaları ( **reduced_location_for_demo.tsv** ve **reduced_location_for_all_data.tsv** ) bulunmakta
-
-------------------------------------------------------------------------
-
-
-##### Data aşağıdaki tablodaki gibidir
-
-**Headerline** tabloda gösterildiği gibi  **ilk satırda** yer almaktadır
+**Headerline** tabloda gösterildiği gibi  **ilk satırda** yer almaktadır (Normalde yoktu db ye aktarmak için bi ekledik)
 
 -----------------------------------------------------------------------------------------
 
@@ -51,11 +26,9 @@ user_id | check_in_time 	|   latitude	|  longitude	 |location_id
 
 >**NOT**
 
->-*- Önce Gowalla_totalCheckins.txt dosyası Gowalla_totalCheckins.tsv dosyasına dönüştürülmeli*
+>-*- Gowalla_totalCheckins.txt den aldığım 10,000 satırlık bir kesiti demo.txt olarak kaydettim*
 
->-*- Bu sayede mongodb ye import edilebilir*
-
->-*- Gowalla_totalCheckins.tsv den aldığım 10000 satırlık bir kesiti demo.tsv olarak kaydettim*
+>-*- demo.txt dosyasını .tsv uzantılı olarak kaydettim. Bu sayede mongodb ye import edilebilir*
 
 -----------------------------------------------------------------------------------------
 
@@ -85,53 +58,27 @@ user_id | check_in_time 	|   latitude	|  longitude	 |location_id
 
 -----------------------------------------------------------------------------------------
 
+Burada bulmaya çalıştığımız bilgiler
 
-#####answer_1_for_demo ve answer_2_for_demo kodlarının çalıştırılmasından sonra databasemizde iki collection olacaktır. Bunlar;
-    1- reduced_user_for_demo
-    2- reduced_location_for_demo
+    Bütün kullanıcılar herbirinin toplam kaç check-in yaptığı                                  (1)
 
------------------------------------------------------------------------------------------
+    Bütün yerlerde toplam kaç tane check-in yapıldığı                                          (2)
 
-#####Bu dataları export etmek (dışarı çıkarmak) için terminali açın ve aşağıdakileri yazın;
+    Bir kullanıcının check-in yaptığı bütün yerlerde en çok check-in yapan kişileri bulmak     (3)
 
-    mongoexport -d your_db_name -c reduced_user     --out /choose_a_path/reduced_user.tsv
-    mongoexport -d your_db_name -c reduced_location --out /choose_a_path/reduced_location.tsv
+İşlemlerin daha hızlı gerçekleşmesi için büyük dosyadan aldığımız demo dosya **Data_Demo** klasöründe *demo.txt* olarak bulunmakta
 
------------------------------------------------------------------------------------------
+Answer_1 klasöründe (1) şartı için yazılmış kodlar bulunmaktadır.
+(Çıktısı **top_100_user_checkin.txt**) olarak aynı klasörün içindedir
 
-###Ve artık datanız hazır !
+Answer_2 klasöründe (2) şartı için yazılmış kodlar bulunmaktadır
+(Çıktısı **top_100_location_checkin.txt**) olarak aynı klasörün içindedir
 
------------------------------------------------------------------------------------------
-
-#####   reduced_user_for_demo.tsv dosyası
-    { "_id" : 0, "value" : 225 }
-    { "_id" : 1, "value" : 12 }
-    { "_id" : 2, "value" : 2100 }
-    { "_id" : 4, "value" : 225 }
-    { "_id" : 5, "value" : 50 }
-    { "_id" : 7, "value" : 75 }
-    { "_id" : 8, "value" : 25 }
-    { "_id" : 9, "value" : 150 }
-    { "_id" : 10, "value" : 100 }
-
------------------------------------------------------------------------------------------
-
-
-#####   reduced_location_for_demo.tsv dosyası
-    { "_id" : 8904, "value" : 1 }
-    { "_id" : 8938, "value" : 1 }
-    { "_id" : 8947, "value" : 1 }
-    { "_id" : 8964, "value" : 1 }
-    { "_id" : 8977, "value" : 5 }
-    { "_id" : 8994, "value" : 1 }
-    { "_id" : 9002, "value" : 2 }
-    { "_id" : 9063, "value" : 3 }
-    { "_id" : 9064, "value" : 1 }
-    { "_id" : 9071, "value" : 1 }
+Answer_3 klasöründe (3) şartı için yazılmış kodlar bulunmaktadır
+(Çıktısı **top_100_max_checkin.txt**) olarak aynı klasörün içindedir
 
 
 -----------------------------------------------------------------------------------------
-
 
 
 #####Kullanılan araçlar
