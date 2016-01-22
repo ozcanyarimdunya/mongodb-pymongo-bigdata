@@ -3,10 +3,23 @@
 ![mongoDB](http://www.bit-forge.com/wp-content/uploads/2015/06/mongodb-logo-large.png)
 
 
+
+
+
+----------
+
+ 1. Büyük Veri İşlemesi
+	 - Açıklama
+	 - Nasıl Yapılır ?
+	 - İsterler
+	 - Kullanılan Araçlar
+
 ----------
 
 
-#Big Data Project
+#Büyük Veri İşlemesi
+
+##Açıklama
 
 Bu projede elimizde bulunan veri dosyasında yaklaşık 6 milyon satırlık veri *Gowalla_totalCheckins.txt* bulunmaktadır.
 
@@ -38,7 +51,7 @@ user_id | check_in_time 	|   latitude	|  longitude	 |location_id
 ----------
 
 
-#Nasıl Yapılır ?
+##Nasıl Yapılır ?
 
  1. [**demo.tsv**](https://github.com/ozcaan11/mongodb-pymongo-bigdata/blob/master/Data_Demo/demo.tsv) dosyasını mongodb ye import etmek için terminali açın ve aşağıdakileri yazın;
 
@@ -77,7 +90,7 @@ Yukarıdaki işlemlerden sonra karşınızda şöyle bir satır örneği olmalı
 
 
 
-####İsterler
+##İsterler
 
 Burada bulmaya çalıştığımız bilgiler
 
@@ -97,7 +110,7 @@ Sonuç olarak;
 
 ----------
 
-####Kullanılan araçlar
+##Kullanılan Araçlar
 
  1. Ubuntu 14.04 LTS
 	 - Download page:  http://www.ubuntu.com/download/desktop
