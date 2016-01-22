@@ -24,7 +24,6 @@ user_id | check_in_time 	|   latitude	|  longitude	 |location_id
 
 
 
------------------------------------------------------------------------------------------
 
 
 #####**NOT**
@@ -33,18 +32,24 @@ user_id | check_in_time 	|   latitude	|  longitude	 |location_id
 
 > - demo.txt dosyasını ***.tsv*** uzantılı olarak kaydettim. Bu sayede mongodb ye import edilebilir
 
+
+
+
 -----------------------------------------------------------------------------------------
 
-demo.tsv dosyasını mongodb ye import etmek için **terminali** açın ve aşağıdakileri yazın;
+#Nasıl Yapılır ?
 
-	mongoimport -d your_db_name -c your_collection_name --file /your_tsv_file_path/demo.tsv --type tsv --headerline
+ 1. demo.tsv dosyasını mongodb ye import etmek için **terminali** açın
+    ve aşağıdakileri yazın;
 
+		mongoimport -d your_db_name -c your_collection_name --file /your_tsv_file_path/demo.tsv --type tsv --headerline
 
-İmport işlemi tamamladığında yeni bir terminal açıp aşağıdakileri yazın;
+ 2. İmport işlemi tamamladığında yeni bir terminal açıp aşağıdakileri
+    yazın;
 
-	xx@xx:~$ mongo 					//mongo shell açılacaktır
-	> use your_db_name
-	> db.your_collection_name.find().pretty()       //pretty datayı daha düzenli gösteriyor
+		xx@xx:~$ mongo 					//mongo shell açılacaktır
+		> use your_db_name
+		> db.your_collection_name.find().pretty()       //pretty datayı daha düzenli gösteriyor
 
 
 Yukarıdaki işlemlerden sonra karşınızda şöyle bir satır örneği olmalıdır
