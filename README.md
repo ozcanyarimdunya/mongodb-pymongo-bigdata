@@ -8,11 +8,11 @@
 
 ----------
 
- 1. Büyük Veri İşlemesi
-	 - Açıklama
-	 - Nasıl Yapılır ?
-	 - İsterler
-	 - Kullanılan Araçlar
+ - [Büyük Veri İşlemesi](https://github.com/ozcaan11/mongodb-pymongo-bigdata/blob/master/README.md#b%C3%BCy%C3%BCk-veri-%C4%B0%C5%9Flemesi)
+	 - [Açıklama](https://github.com/ozcaan11/mongodb-pymongo-bigdata/blob/master/README.md#a%C3%A7%C4%B1klama)
+	 - [Nasıl Yapılır ?](https://github.com/ozcaan11/mongodb-pymongo-bigdata/blob/master/README.md#nas%C4%B1l-yap%C4%B1l%C4%B1r-)
+	 - [İsterler](https://github.com/ozcaan11/mongodb-pymongo-bigdata/blob/master/README.md#%C4%B0sterler)
+	 - [Kullanılan Araçlar](https://github.com/ozcaan11/mongodb-pymongo-bigdata/blob/master/README.md#kullan%C4%B1lan-ara%C3%A7lar)
 
 ----------
 
