@@ -64,7 +64,7 @@ Yukarıdaki işlemlerden sonra karşınızda şöyle bir satır örneği olmalı
 
     Bir kullanıcının check-in yaptığı bütün yerlerde en çok check-in yapan kişileri bulmak     (3)
 
- -*Answer_1* klasöründe **(1)** şartı için yazılmış kodlar bulunmaktadır.
+ - *Answer_1* klasöründe **(1)** şartı için yazılmış kodlar bulunmaktadır.
 (Çıktısı **top_100_user_checkin.txt**) olarak aynı klasörün içindedir
 
 *Answer_2* klasöründe **(2)** şartı için yazılmış kodlar bulunmaktadır
