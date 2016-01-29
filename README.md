@@ -2,17 +2,13 @@
 
 ![mongoDB](http://www.bit-forge.com/wp-content/uploads/2015/06/mongodb-logo-large.png)
 
-
-
-
-
 ----------
 
- - [Büyük Veri İşlemesi](https://github.com/ozcaan11/mongodb-pymongo-bigdata/blob/master/README.md#b%C3%BCy%C3%BCk-veri-%C4%B0%C5%9Flemesi)
-	 - [Açıklama](https://github.com/ozcaan11/mongodb-pymongo-bigdata/blob/master/README.md#a%C3%A7%C4%B1klama)
-	 - [Nasıl Yapılır ?](https://github.com/ozcaan11/mongodb-pymongo-bigdata/blob/master/README.md#nas%C4%B1l-yap%C4%B1l%C4%B1r-)
-	 - [İsterler](https://github.com/ozcaan11/mongodb-pymongo-bigdata/blob/master/README.md#%C4%B0sterler)
-	 - [Kullanılan Araçlar](https://github.com/ozcaan11/mongodb-pymongo-bigdata/blob/master/README.md#kullan%C4%B1lan-ara%C3%A7lar)
+ - [Büyük Veri İşlemesi](README.md#b%C3%BCy%C3%BCk-veri-%C4%B0%C5%9Flemesi)
+	 - [Açıklama](README.md#a%C3%A7%C4%B1klama)
+	 - [Nasıl Yapılır ?](README.md#nas%C4%B1l-yap%C4%B1l%C4%B1r-)
+	 - [İsterler](README.md#%C4%B0sterler)
+	 - [Kullanılan Araçlar](README.md#kullan%C4%B1lan-ara%C3%A7lar)
 
 ----------
 
@@ -43,7 +39,7 @@ user_id | check_in_time 	|   latitude	|  longitude	 |location_id
 
 **NOT**
 
-> - Gowalla_totalCheckins.txt den aldığım 10,000 satırlık bir kesiti [***demo.txt***](https://github.com/ozcaan11/mongodb-pymongo-bigdata/blob/master/Data_Demo/demo.txt) olarak kaydettim
+> - Gowalla_totalCheckins.txt den aldığım 10,000 satırlık bir kesiti [***demo.txt***](Data_Demo/demo.txt) olarak kaydettim
 
 > - demo.txt dosyasını ***.tsv*** uzantılı olarak kaydettim. Bu sayede mongodb ye import edilebilir
 
@@ -53,7 +49,7 @@ user_id | check_in_time 	|   latitude	|  longitude	 |location_id
 
 ##Nasıl Yapılır ?
 
- 1. [**demo.tsv**](https://github.com/ozcaan11/mongodb-pymongo-bigdata/blob/master/Data_Demo/demo.tsv) dosyasını mongodb ye import etmek için terminali açın ve aşağıdakileri yazın;
+ 1. [**demo.tsv**](Data_Demo/demo.tsv) dosyasını mongodb ye import etmek için terminali açın ve aşağıdakileri yazın;
 
 		mongoimport -d your_db_name -c your_collection_name --file /your_tsv_file_path/demo.tsv --type tsv --headerline
 
@@ -101,29 +97,29 @@ Burada bulmaya çalıştığımız bilgiler
 
 Sonuç olarak;
 
- - [*Answer_1*](https://github.com/ozcaan11/mongodb-pymongo-bigdata/blob/master/Answer_1) klasöründe **(1)** şartı için yazılmış kodlar bulunmaktadır. Çıktı  [**top_100_user_checkin.txt**](https://github.com/ozcaan11/mongodb-pymongo-bigdata/blob/master/Answer_1/top_100_user_checkin.txt) olarak aynı
+ - [*Answer_1*](Answer_1) klasöründe **(1)** şartı için yazılmış kodlar bulunmaktadır. Çıktı  [**top_100_user_checkin.txt**](Answer_1/top_100_user_checkin.txt) olarak aynı
    klasörün içindedir
- - [*Answer_2*](https://github.com/ozcaan11/mongodb-pymongo-bigdata/blob/master/Answer_2) klasöründe **(2)** şartı için yazılmış kodlar bulunmaktadır. Çıktı  [**top_100_location_checkin.txt**](https://github.com/ozcaan11/mongodb-pymongo-bigdata/blob/master/Answer_2/top_100_locations_checkin.txt)  olarak aynı
+ - [*Answer_2*](Answer_2) klasöründe **(2)** şartı için yazılmış kodlar bulunmaktadır. Çıktı  [**top_100_location_checkin.txt**](Answer_2/top_100_locations_checkin.txt)  olarak aynı
    klasörün içindedir
- - [*Answer_3*](https://github.com/ozcaan11/mongodb-pymongo-bigdata/blob/master/Answer_3) klasöründe **(3)** şartı için yazılmış kodlar bulunmaktadır. Çıktı  [**top_100_max_checkin.txt**](https://github.com/ozcaan11/mongodb-pymongo-bigdata/blob/master/Answer_3/top_100_max_checkin.txt)  olarak aynı
+ - [*Answer_3*](Answer_3) klasöründe **(3)** şartı için yazılmış kodlar bulunmaktadır. Çıktı  [**top_100_max_checkin.txt**](Answer_3/top_100_max_checkin.txt)  olarak aynı
    klasörün içindedir
 
 ----------
 
 ##Kullanılan Araçlar
 
- 1. Ubuntu 14.04 LTS
-	 - Download page:  http://www.ubuntu.com/download/desktop
+| 1. [Ubuntu 14.04 LTS](http://www.ubuntu.com/download/desktop)
+----------
  
- 2. Pycharm Community Edition 5.0.3
-	 - Download page:  https://www.jetbrains.com/pycharm/download/#section=linux
+| 2. [Pycharm Community Edition 5.0.3](https://www.jetbrains.com/pycharm/download/)
+----------
  
- 3. Mongodb
-	 - Download page:  https://www.mongodb.org/
+| 3. [Mongodb](https://www.mongodb.org/)
+----------  
 
 
 ----------
 
 
-[***@ozcaan11***](https://github.com/ozcaan11) tarafında geliştirilen bir proje olarak duruyor şuan :)
-
+| [***@ozcaan11***](https://github.com/ozcaan11) tarafında geliştirilecek bir proje olarak duruyor şuan :)
+----------
