@@ -4,7 +4,7 @@
 
 ----------
 
- - [Büyük Veri İşlemesi](README.md#b%C3%BCy%C3%BCk-veri-%C4%B0%C5%9Flemesi)
+ - [Büyük Veri İşlemesi](#b%C3%BCy%C3%BCk-veri-%C4%B0%C5%9Flemesi)
 	 - [Açıklama](README.md#a%C3%A7%C4%B1klama)
 	 - [Nasıl Yapılır ?](README.md#nas%C4%B1l-yap%C4%B1l%C4%B1r-)
 	 - [İsterler](README.md#%C4%B0sterler)
