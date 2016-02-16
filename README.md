@@ -9,6 +9,7 @@
 	 - [Nasıl Yapılır ?](#nas%C4%B1l-yap%C4%B1l%C4%B1r-)
 	 - [İsterler](#%C4%B0sterler)
 	 - [Kullanılan Araçlar](#kullan%C4%B1lan-ara%C3%A7lar)
+	 - [Projenin scala dilinde yazılmış halinin kodları (Fatih Metin)](https://github.com/teaddict/bigdata-project)
 
 ----------
 
@@ -105,6 +106,11 @@ Sonuç olarak;
    klasörün içindedir
 
 ----------
+
+##Extra 
+Projenin scala dilinde yazılmış haline [buradan](https://github.com/teaddict/bigdata-project) ulaşabilirsiniz.
+
+Proje [Fatih Metin](https://github.com/teaddict) tarafından yazılmıştır
 
 ##Kullanılan Araçlar
 
