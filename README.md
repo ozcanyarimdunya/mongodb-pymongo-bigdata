@@ -107,10 +107,11 @@ Sonuç olarak;
 
 ----------
 
-##Extra 
-Proje [Fatih Metin](https://github.com/teaddict) tarafından scala dilinde yazılmıştır
+##Extra
+Projenin scala dilinde yazılmış haline [buradan](https://github.com/teaddict/bigdata-project) ulaşabilirsiniz.
 
-Projeye [buradan](https://github.com/teaddict/bigdata-project) ulaşabilirsiniz.
+Proje [Fatih Metin](https://github.com/teaddict) tarafından yazılmıştır.
+
 
 ----------
 
