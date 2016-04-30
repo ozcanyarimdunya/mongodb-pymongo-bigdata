@@ -132,5 +132,5 @@ Proje [Fatih Metin](https://github.com/teaddict) tarafından yazılmıştır.
 ----------
 
 
-| [@ozcaan11](https://github.com/ozcaan11) tarafında geliştirilecek bir proje olarak duruyor şuan :)
+| [@ozcaan11](https://github.com/ozcaan11)
 ----------
