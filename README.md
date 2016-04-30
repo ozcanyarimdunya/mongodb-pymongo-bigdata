@@ -40,6 +40,8 @@ user_id | check_in_time 	|   latitude	|  longitude	 |location_id
 
 **NOT**
 
+> - Uygulamayı Windowsta yapmadım. Ubuntu 14.04 LTS de yaptım. O yüzden aşağıda yapılacak işlemlerin Windowsta ne sonuçlar vereceğini bilmiyorum.
+
 > - Gowalla_totalCheckins.txt den aldığım 10,000 satırlık bir kesiti [***demo.txt***](Data_Demo/demo.txt) olarak kaydettim
 
 > - demo.txt dosyasını ***.tsv*** uzantılı olarak kaydettim. Bu sayede mongodb ye import edilebilir
